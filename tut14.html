@@ -6,11 +6,24 @@
     <title>Css selectors</title>
     <!-- internal css -->
     <style>
+        /* element selector */
+        p{
+            border: 2px solid gold;
+        }
         .abc{
             color: red;
         }
+        /* id selector */
+        #redelement{
+            border: 3px solid yellowgreen;
+        }
+        /* Class selector */
         .bgblue{
             background-color: aquamarine;
+        }
+        /* grouping selector */
+        span,footer{
+            background-color: azure;
         }
     </style>
 </head>
@@ -20,6 +33,7 @@
 
     <p class="abc">Lorem ipsum dolor sit.</p>
     <div>this is written in div</div>
-    
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+<footer>this is a glass and fill with water </footer>    
 </body>
 </html>
