@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* this is a universal selector */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(117, 105, 90);
+        }
+        .container{
+            background-color: #71940b3b;
+            border: 3px solid #cac2b1;
+            /* we can set padding and margin for left ,right,toop ,bottom like this  */
+            /* padding: 19px; */
+            /* padding :top right bottom left */
+            /* padding: 14px 16px 14px 18px; */
+            /* padding:y(top/bottom) x(left/right) */
+            padding: 10px 20px;
+            /* margin :top right bottom left */
+            /* margin: 14px 16px 8px 18px; */
+
+            /* margin:y(top/bottom) x(left/right) */
+            margin:12px 30px;
+            /* margin: 34px; */
+            
+        border-radius: 23px;
+        width: 400px;
+
+        box-sizing: border-box;
+
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my first heaaading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt tenetur aspernatur, quae repellendus porro quidem nisi! Soluta, voluptas quos.</p>
+    </div>
+    
+    <div class="container">
+        <h3>This is my first heaaading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt tenetur aspernatur, quae repellendus porro quidem nisi! Soluta, voluptas quos.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my first heaaading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt tenetur aspernatur, quae repellendus porro quidem nisi! Soluta, voluptas quos.</p>
+    </div>
+    <p></p>
+    
+</body>
+</html>
