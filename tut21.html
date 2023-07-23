@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+        font-family:'Times New Roman', Times, serif   
+        }
+        .container{
+            width: 1000px;
+            border: 4px solid goldenrod;
+            background-color: aqua;
+            border-radius: 30px;
+            margin:33px auto;
+        }
+        .item{
+            border: 3px solid blue;
+            border-radius: 20px;
+            margin: 20px 18px;
+            background-color: azure;
+            padding: 20px 30px;
+        }
+        #fruit{
+            float: right;
+            width: 40%;
+        }
+        #Computer{
+            float: left;
+            width: 40%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: both;
+            width: 95%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Welcome to my store</h1>
+    
+    <div id="fruit" class="item">
+    <h3>Fruits</h3>
+    <p id="fruitspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iste quaerat omnis iusto ratione nam culpa velit at! Laboriosam, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a sequi harum reprehenderit impedit temporibus totam voluptates fuga. Unde ipsum aliquid impedit praesentium beatae saepe ratione accusantium fugiat distinctio? Animi modi qui sint doloribus.</p>
+    </div>
+
+    <div id="Computer" class="item">
+        <h3>Computer</h3>
+        <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsam, dolorum ullam quibusdam officia vitae aliquid. Possimus quas laborum asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis beatae similique libero tempore alias, praesentium quod rem error provident consequuntur, dolore sed corrupti excepturi sequi voluptates. Totam eaque assumenda rerum amet tempore aliquam ratione!
+    
+        </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi rerum odit laudantium dignissimos necessitatibus, tenetur assumenda facilis eius inventore?</p>
+            </div>
+   </div> 
+</body>
+</html>
