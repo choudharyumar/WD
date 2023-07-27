@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling links and buttons</title>
+<style>
+    .container{
+        background-color: aquamarine;
+        border: 3px solid burlywood;
+        padding: 34px;
+        margin: 34px auto;
+        width: 666px ;
+        border-radius: 4px ;
+    }
+    .btn{
+        background-color: rgb(170, 201, 201);
+        padding: 12px;
+        border: none;
+         cursor: pointer;
+         border-radius: 4px;
+
+    }
+    a{
+        text-decoration: none;
+        color: rgb(79, 54, 17);
+    }
+    a:visited{
+        background-color: azure;
+    }
+    a:active{
+        background-color: rgb(1, 14, 14);
+    }
+    a:hover{
+        color: rgb(255, 0, 0);
+        border: 2px solid red;
+    }
+    .btn:hover{
+        color: rgb(255, 0, 0);
+        border: 2px solid red;
+    }
+</style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed hic quod quidem non laboriosam, doloremque ratione commodi qui minus reiciendis fuga ipsam consequuntur vel natus recusandae officia temporibus inventore placeat animi deleniti. Soluta, error?</p>
+        <a href="https://javascript.info/" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
