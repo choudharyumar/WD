@@ -30,9 +30,9 @@
         .mid{
             position: absolute;
             top: 15px;
-            right: 500px;
+            right: 400px;
             display:block;
-            width: 33%;
+            width: 40%;
             margin: 7px auto;
             border: 3px solid rgb(196, 114, 114);
         }
@@ -46,17 +46,43 @@
         }
         img{
             width: 100%;
-           max-height: fit-content; 
+           height: 75%; 
         }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 18px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 15px 10px;
 
+        }
+        .navbar li a:hover{
+            color: rgb(168, 51, 51);
+            text-decoration: underline;
+
+        }
+        .left img{
+            width: 60%;
+        }
     </style>
 </head>
-<body><img src="./img2.avif" alt="">
+<body><img src="./img3.jpeg" alt="">
     <header class="header">
         <!-- left box for logo -->
-        <div class="left"> i m left</div>
+        <div class="left"><img src="./img5.png" alt="" srcset="">
+        </div>
         <!-- right box for navbar -->
-        <div class="mid">i m mid</div>
+        <div class="mid"><ul class="navbar">
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About Us</a> </li>
+            <li><a href="#">Fitness Calculator</a> </li>
+            <li><a href="#">Contact Us</a> </li>
+        </ul></div>
         <!-- right box for search -->
         <div class="right">i m right</div>
     </header>
