@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umar's fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <style>
         img{
@@ -17,7 +23,7 @@
             padding: 0px;
             /* background: url('./img2.avif'); */
             /* height: 2000px; */
-            background-repeat: no-repeat;
+            font-family: 'Handlee', cursive;
 
         }
         .left{
@@ -25,7 +31,7 @@
             top: 16px;
             left: 17px;
             display:inline-block;
-            border: 3px solid rgb(7, 63, 19);
+            /* border: 3px solid rgb(7, 63, 19); */
         }
         .mid{
             position: absolute;
@@ -34,13 +40,14 @@
             display:block;
             width: 40%;
             margin: 7px auto;
-            border: 3px solid rgb(196, 114, 114);
+            font-weight: bold;
+            /* border: 3px solid rgb(196, 114, 114); */
         }
         .right{
             position: absolute;
             top: 16px;
             right: 17px;
-            border: 3px solid rgb(174, 0, 255);
+            /* border: 3px solid rgb(174, 0, 255); */
             display:inline-block;
 
         }
@@ -67,7 +74,58 @@
 
         }
         .left img{
-            width: 60%;
+
+            width: 80%;
+        }
+        .btn{
+            font-family: 'Handlee', cursive;
+        
+            margin: 9px 8px;
+            padding: 4px 8px;
+            border: 2px solid rgb(74, 69, 69);
+            border-radius: 9px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+        .btn:hover{
+            background-color: rgb(185, 187, 187);
+        }
+        .container{
+            color: rgb(173, 117, 117);
+            position: absolute;
+            top: 120px;
+            /* border: 2px solid grey; */
+            margin: 57px 149px;
+            padding: 22px 24px;
+            border-radius: 6px;
+            width: 33%;
+            font-family: 'Bebas Neue', sans-serif;
+            text-align: center;
+          
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 258px;
+            padding: 8px;
+            border-radius: 4px;
+            margin: 12px auto;
+            font-weight: bold;
+
+         
+        }
+        .container button {
+            padding: 9px;
+            margin: 12px 39px;
+            font-family: 'Bebas Neue', sans-serif;
+            width: 34%;
+            font-weight: bold;
+
+        }
+        .container button:hover{
+            background-color: rgb(74, 69, 69);
+
         }
     </style>
 </head>
@@ -84,7 +142,32 @@
             <li><a href="#">Contact Us</a> </li>
         </ul></div>
         <!-- right box for search -->
-        <div class="right">i m right</div>
+        <div class="right"><button class="btn">Call Us Now</button>
+            <button class="btn"> Email Us</button></div>
     </header>
+    <div class="container"><h3>Join the best gym of Layyah</h3>
+    <form action="noaction.php">
+        <div class="form-group" >
+            <input type="text" name="" placeholder= "Enter your Name">
+        </div>
+        <div class="form-group" >
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group" >
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group" >
+            <input type="text" name="" placeholder="Enter your Address">
+        </div>
+        <div class="form-group" >
+            <input type="text" name="" placeholder="Enter your Contact Number">
+        </div>
+        <div class="form-group" >
+            <input type="text" name="" placeholder="Enter your Email">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+
+</div>
 </body>
 </html>
