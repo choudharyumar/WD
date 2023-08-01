@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        h1 {
+            background-color: aquamarine;
+            font-weight: bold;
+            border: 2px solid rgb(242, 154, 154);
+            text-align: center;
+        }
+
+        /*ya waha apply ho ga ka div ka andr jitny bi p tag hain  */
+
+        /* div p {
+            color: rgb(201, 15, 111);
+            background-color: blanchedalmond;
+        } */
+
+        /* YA us py apply ho ga jis ma div ka bad li tag or phr p tag atta hai */
+        /* div li p {
+            color: blue;
+        } */
+
+        /*ya us py apply ho ga jis ma div ka bad direct p atta hai  */
+        /* div> p {
+            color: blue;
+        }    */
+
+        /* ya us py apply ho jis ma phly div atta hai */
+        div+ p {
+            color: blue;
+        }   
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <ul>
+            <li class="lig">
+                <p>this is the paragraph inside the li</p>
+            </li>
+            <li>
+                <p>this is affected</p>
+            </li>
+            <li>this is not affected</li>
+        </ul>
+        <div class="row">
+            <p>this is div paragraph</p>
+        </div>
+        <p>this is also a div paragraph</p>
+    </div>
+    <p>this is the outer most paragraph </p>
+</body>
+
+</html>
