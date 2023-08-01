@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries</title>
+    <style>
+        .box {
+            background-color: antiquewhite;
+            font-size: 22px;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:100px) {
+            #box1 {
+                display: block;
+                background-color: rgb(91, 84, 69);
+            }
+        }
+
+        @media only screen and (min-width: 200px) and (max-width: 500px){
+            #box2{
+                display: block;
+                background-color: teal; 
+            }
+        }
+        @media (min-width: 600px) and (max-width: 800px){
+            #box3{
+                display: block;
+                background-color: rgb(144, 148, 148); 
+            }
+        }
+        @media (min-width: 800px) and (max-width: 1000px){
+            #box4{
+                display: block;
+                background-color: rgb(214, 114, 144); 
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="box" id="box1">Ma aik phone hn</div>
+    <div class="box" id="box2">Ma ak tablet hn</div>
+    <div class="box" id="box3">Ma aik computer hn</div>
+    <div class="box" id="box4">Ma aik wide screen hn</div>
+</body>
+
+</html>
