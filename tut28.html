@@ -41,6 +41,26 @@
             margin: 9px;
             padding: 5px;
         }
+        #item1{
+            /* higher the order it shows on last */
+            /* order: 2; */
+             /* flex-grow:4 ; */
+        }
+        #item2{
+            /* flex-grow:2 ; */
+
+            /* it apply on width when it is in row direction and it apply on height when it is in coloumn direction */
+            flex-basis: 200px;
+        }
+        #item3{
+            /* flex-shrink: 3; */
+            /* flex: 2 2 230px; */
+            align-self: flex-end;
+            align-self: center;
+            align-self: self-start;
+        }
+        
+
     </style>
 </head>
 
@@ -50,9 +70,9 @@
         <div class="item" id="item1">First Box</div>
         <div class="item" id="item2">Second Box</div>
         <div class="item" id="item3">Third Box</div>
-        <div class="item" id="item4">Fourth Box</div>
-        <div class="item" id="item5">Fifth Box</div>
-        <div class="item" id="item6">Sixth Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div> -->
+        <!-- <div class="item" id="item5">Fifth Box</div> -->
+        <!-- <div class="item" id="item6">Sixth Box</div> -->
     </div>
 </body>
 
