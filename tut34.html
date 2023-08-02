@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid firebrick; */
+            background-color: antiquewhite;
+            /* box-shadow: 10px 13px rgb(134, 241, 134); */
+
+            /* box-shadow: 8px 10px  12px 7px rgb(162, 225, 240); */
+
+            /* we use this as a negative value also for show on the above case only add the sign - */
+            /* box-shadow: inset 10px 10px gray;  */
+
+            box-shadow: 10px 5px green, 10px 5px orange;
+        }
+        .card h3{
+            text-shadow: 2px 5px  3px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h3>Card1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+        <div class="card" id="card2"><h3>Card2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+        <div class="card" id="card3"><h3>Card3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+        <div class="card" id="card4"><h3>Card4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+    </div>
+</body>
+
+</html>
