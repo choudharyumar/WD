@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+    <style>
+        .container {
+            /* display: flex; */
+            background-color: azure;
+        }
+
+        .box {
+            background-color: antiquewhite;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: umar; */
+            animation-name: umar2;
+
+            animation-duration: 2s;
+            /* for unlimited time we set this infinite */
+            animation-iteration-count: 3;
+            /* if we set this alternate than it always  back to its original positin */
+            /* animation-fill-mode:forwards ; */
+            /* shru ma slow phr taze or age ease out likhy gy to phr ulta scene ho jaye ga */
+            /* animation-timing-function:ease-in ; */
+            /* animation-delay: 3s; */
+            /* animation-direction:reverse ; */
+
+            /* short hand property */
+
+            /* animation: animation-name animation-duration animation timing function animation delay animation iteration count animation fill mode; */
+            animation: umar2 4s ease-in 1s 12 backwards;
+
+        }
+
+        @keyframes umar {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+        @keyframes umar2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+
+</body>
+
+</html>
