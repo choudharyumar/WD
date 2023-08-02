@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: antiquewhite;
+        }
+        header::before{
+            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity:0.5 ;
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+
+        section {
+            height: 344px;
+            /* border: 2px solid rosybrown; */
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section::before {
+            /* content: "this is a content"; */
+        }
+
+        /* agr hm after likhy ga to content us k bad ajaye ga */
+        h3 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+        .item:hover{
+            background-color: rgb(188, 246, 227);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+       
+
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.</p>
+    </section>
+    <hr>
+</body>
+
+</html>
