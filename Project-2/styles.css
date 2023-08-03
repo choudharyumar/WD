@@ -1,4 +1,8 @@
 /* css reset */
+body{
+  font-family: 'Bree Serif', serif;
+  
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,17 +27,21 @@
   margin: 1px 15px;
 }
 #navbar {
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 /* navbar list styling */
 #navbar ul {
   display: flex;
+  font-family: 'Bree Serif', serif;
 }
 #navbar::before {
   content: "";
   background-color: black;
   position: absolute;
+  top: 0px;
+  left: 0px;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -62,14 +70,16 @@
 #home {
   display: flex;
   flex-direction: column;
-  padding: 3px 200px;
-  height: 400px;
+  padding: 20px 200px;
+  height: 578px;
   justify-content: center;
   align-items: center;
 }
 #home::before {
   content: "";
   position: absolute;
+  top: 0px;
+  left: 0px;
 background: url(./backg.jpg) no-repeat center center/cover ;
   height: 100%;
   width: 100%;
@@ -81,14 +91,109 @@ background: url(./backg.jpg) no-repeat center center/cover ;
     color: white;
     text-align: center;
     font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
 }
 #home p {
     color: white;
     text-align: center;
     font-size: 1rem;
+    font-family: 'Bree Serif', serif;
 }
 /* Utility clsses */
-.hpri{
+/* services section */
+.SerContainer{
+  /* border: 4px solid brown; */
+  /* margin-top: 50px; */
+}
+
+#services {
+  margin: 34px;
+  display: flex;
+}
+
+#services .box{
+  border: 2px solid orange;
+  padding: 14px;
+  margin: -15px 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* text-align: justify; */
+  border-radius: 24px;
+  background-color: rgb(252, 245, 236);
+
+}
+#services .box img{
+  /* border: 3px solid rgb(101, 42, 165); */
+  margin: auto;
+  display: block;
+}
+
+/* client section */
+#ClientSection{
+  position: relative;
+ 
+
+  height: 344px;
+  /* border: 2px solid orange; */
+}
+#ClientSection::before{
+content: "";
+position: absolute;
+background: url("./f2.jpg")no-repeat center center/cover;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.6;
+
+}
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#clients img{
+  border: 2px solid orange;
+  height: 100px;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#clients img:hover{
+ background-color: antiquewhite;
+}
+
+.h-primary {
     font-size: 2.8rem;
+    padding: 20px;
+    text-align: center;
+}
+.h-secondary{
+  font-size: 1.8rem;
     padding: 12px;
 }
+img{
+  height: 200px;
+  width: 300px;
+}
+.btn{
+  padding: 6px 20px;
+  border: 3px solid rgb(240, 174, 87);
+  background-color: rgb(247, 195, 65);
+  border-radius: 9px;
+  color: white;
+  margin: 17px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  
+}
+.btn:hover{
+  background-color: white;
+  color: black; 
+}
+
