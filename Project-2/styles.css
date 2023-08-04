@@ -7,6 +7,11 @@ body{
   margin: 0;
   padding: 0;
 }
+
+/* for smooth behavior */
+html{
+  scroll-behavior: smooth;
+}
 /* CSS Variables */
 :root {
   --navbar-height: 59px;
@@ -27,7 +32,7 @@ body{
   margin: 1px 15px;
 }
 #navbar {
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
@@ -114,7 +119,7 @@ background: url(./backg.jpg) no-repeat center center/cover ;
 #services .box{
   border: 2px solid orange;
   padding: 14px;
-  margin: 0px 15px;
+  margin: 0px 4px;
   margin-bottom: 20px;
   text-align: center;
   /* text-align: justify; */
@@ -133,7 +138,7 @@ background: url(./backg.jpg) no-repeat center center/cover ;
   position: relative;
  
 
-  height: 344px;
+  /* height: 344px; */
   /* border: 2px solid orange; */
 }
 #ClientSection::before{
