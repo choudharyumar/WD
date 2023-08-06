@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows and Coloumns in css grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 2fr 6fr;
+            grid-auto-rows: 3fr;
+            /* grid-template-columns: 1fr 4fr 2fr; */
+
+            /* to reapeat the coloumn ratios */
+
+            grid-template-columns: repeat(4,2fr);
+
+
+            grid-gap: 1rem;
+        }
+        .box{
+            background-color: orange;
+            border: 3px solid burlywood;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+ <div class="box">this is box-11</div>
+ <div class="box">this is box-12</div>
+ <div class="box">this is box-13</div>
+ <div class="box">this is box-14</div>
+ <div class="box">this is box-15</div>
+ <div class="box">this is box-16</div>
+ <div class="box">this is box-17</div>
+ <div class="box">this is box-18</div>
+ <div class="box">this is box-19</div>
+ <div class="box">this is box-110</div> 
+ 
+ 
+</div>
+
+</body>
+</html>
