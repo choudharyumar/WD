@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>hy here are string functions</h2>
+    </div>
+    <script>
+        let str = "This is a string"
+        let position = str.indexOf("is")
+        console.log(position)
+        position = str.lastIndexOf("is")
+        console.log(position)
+        console.log(str)
+        // substring from a string
+        let substr = str.slice(1, 6)
+        console.log(substr)
+
+        // use of substr and it count the value of (2,5)start from position 2 and end on position 5 include the value of position 5 also
+        let substr1 = str.substr(1, 6)
+        console.log(substr1)
+
+        let replace = str.replace("string", "umar")
+        console.log(replace)
+
+        // to show the string in the upper case
+        console.log(str.toUpperCase())
+
+        // to show the string to the lower case
+        console.log(str.toLowerCase())
+
+
+        // to add new words to a string
+
+        let newstr=str.concat(" of strings")
+        console.log(newstr)
+        // use of + symbol
+        console.log(str+" of strings")
+
+        // to remove the spaces from start and from the end
+
+        let space="    this is  a         "
+        console.log(space.trim())
+
+
+        // to out a word from string
+        let out=str.charAt(3)
+         console.log(out)
+
+        //  to  generate the code of given inder
+         let code=str.charCodeAt(3)
+         console.log(code)
+// for slicing
+        console.log(str[3])
+    </script>
+</body>
+
+</html>
