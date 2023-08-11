@@ -27,3 +27,9 @@ console.log(text);
 
 console.log("creating a new file")
 fs.writeFileSync("umar2.txt",text)
+
+
+
+
+
+
