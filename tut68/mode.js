@@ -10,4 +10,14 @@ function average(arr){
 
 // to export this function
 
-module.exports = average;
+// module.exports = average;
+
+// we also make a object in this 
+
+module.exports ={
+    avg:average,
+    name:'umar hayat',
+    class:6
+} ;
+
+// module.exports.name="Ali Hamza"=>--it is also used as an object

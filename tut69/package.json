@@ -1,0 +1,20 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "this is the best package",
+  "main": "tut69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hy"
+  ],
+  "author": "umar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
